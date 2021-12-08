@@ -1,0 +1,18 @@
+<h4 (click)="openModal()">{{ restaurant.name }}</h4>
+<p>{{ restaurant.description }}</p>
+<p>
+  Rating:
+  <app-rating
+    [imageFull]="'star-full.png'"
+    [imageEmpty]="'star-empty.png'"
+    [countFull]="restaurant.rating"
+  ></app-rating>
+</p>
+<p>
+  Price:
+  <app-rating
+    [imageFull]="'coin-full.png'"
+    [imageEmpty]="'coin-empty.png'"
+    [countFull]="restaurant.rating"
+  ></app-rating>
+</p>

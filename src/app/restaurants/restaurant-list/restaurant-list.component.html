@@ -1,0 +1,9 @@
+<div>
+  <div class="row">
+    <div class="col-4" *ngFor="let restaurant of restaurants">
+      <app-restaurant-list-item
+        [restaurant]="restaurant"
+      ></app-restaurant-list-item>
+    </div>
+  </div>
+</div>

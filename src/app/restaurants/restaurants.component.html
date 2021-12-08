@@ -1,0 +1,14 @@
+<div class="row pt-4 pb-3">
+  <div class="col-6">
+    <app-pagination
+      [collectionSize]="numberOfRestaurants"
+      (pageEmitter)="updateParams($event)"
+    ></app-pagination>
+  </div>
+  <div class="col-6">
+    <app-price (priceEmmiter)="updateParams($event)"></app-price>
+  </div>
+</div>
+<div class="row">
+  <app-restaurant-list [restaurants]="restaurants"></app-restaurant-list>
+</div>

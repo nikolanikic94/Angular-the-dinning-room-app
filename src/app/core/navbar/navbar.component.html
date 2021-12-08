@@ -1,0 +1,31 @@
+<div class="container">
+  <h3 class="text-right">The Dinning Room</h3>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item" [routerLink]="['/home']">Home</li>
+    <li class="list-group-item">
+      Restaurants
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item" [routerLink]="['/restaurants/All']">All</li>
+        <li class="list-group-item" [routerLink]="['/restaurants/German']">
+          German
+        </li>
+        <li class="list-group-item" [routerLink]="['/restaurants/Chinese']">
+          Chinese
+        </li>
+        <li class="list-group-item" [routerLink]="['/restaurants/American']">
+          American
+        </li>
+        <li class="list-group-item" [routerLink]="['/restaurants/Indian']">
+          Indian
+        </li>
+        <li class="list-group-item" [routerLink]="['/restaurants/Pizza']">
+          Pizza
+        </li>
+        <li class="list-group-item" [routerLink]="['/restaurants/Vegetarian']">
+          Vegetarian
+        </li>
+      </ul>
+    </li>
+    <li class="list-group-item" [routerLink]="['/about']">About</li>
+  </ul>
+</div>
